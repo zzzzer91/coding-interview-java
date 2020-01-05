@@ -10,7 +10,7 @@ import java.util.LinkedList;
  *
  * 广度搜索
  */
-class Main {
+public class Main {
     private static class Point {
         int x, y;
         Point(int x, int y) {

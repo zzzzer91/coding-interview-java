@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * https://www.acwing.com/problem/content/732/
  */
-class Main {
+public class Main {
     private static int findMaxheight(int[] heights) {
         int res = 0;
         for (int h : heights) {

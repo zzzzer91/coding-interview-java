@@ -3,7 +3,7 @@ package offer.p03_数组中重复的数字;
 /**
  * https://www.acwing.com/problem/content/14/
  */
-class Solution {
+public class Solution {
     public int duplicateInArray(int[] nums) {
         for (int num : nums) {
             if (num < 0 || num >= nums.length) {

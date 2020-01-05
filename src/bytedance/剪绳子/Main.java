@@ -7,8 +7,8 @@ import java.util.Scanner;
  *
  * 使用二分法
  */
-class Main {
-    public static boolean check(int[] ropes, int m, double len) {
+public class Main {
+    private static boolean check(int[] ropes, int m, double len) {
         int count = 0;
         for (int rope : ropes) {
             count += rope / len;

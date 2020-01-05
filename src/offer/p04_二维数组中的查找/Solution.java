@@ -3,7 +3,7 @@ package offer.p04_二维数组中的查找;
 /**
  * https://www.acwing.com/problem/content/16/
  */
-class Solution {
+public class Solution {
     public boolean searchArray(int[][] array, int target) {
         int m = array.length;
         if (m == 0) {

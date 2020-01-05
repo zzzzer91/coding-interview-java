@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * https://www.acwing.com/problem/content/679/
  */
-class Main {
+public class Main {
     public static int compute(int n) {
         int[] coins = {64, 16, 4, 1};
         n = 1024 - n;

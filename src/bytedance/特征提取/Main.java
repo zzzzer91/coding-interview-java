@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * 双 HashMap，一个存连续次数，一个存上一次出现帧
  */
-class Main {
+public class Main {
     private static class Feature {
         int x, y;
         Feature(int x, int y) {
