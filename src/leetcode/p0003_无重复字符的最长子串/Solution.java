@@ -1,15 +1,19 @@
 package leetcode.p0003_无重复字符的最长子串;
 
+/**
+ * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
+ */
 class Solution {
     public int lengthOfLongestSubstring(String s) {
-        int ret = 0;
+        int res = 0;
         int[] indexs = new int[128];
-        for (int r = 0, l = 0; r < s.length(); r++) {
-            char c = s.charAt(r);
-            l = Math.max(l, indexs[c]);
-            indexs[c] = r + 1;
-            ret = Math.max(ret, r-l+1);
+        int pos = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            pos = Math.max(pos, indexs[c]);
+            res = Math.max(res, i-pos+1);
+            indexs[c] = i + 1;
         }
-        return ret;
+        return res;
     }
 }
