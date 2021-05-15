@@ -1,15 +1,18 @@
 package leetcode.p0007_整数反转;
 
+/**
+ * https://leetcode-cn.com/problems/reverse-integer/
+ */
 class Solution {
     public int reverse(int x) {
-        long ret = 0;
+        long res = 0;
         while (x != 0) {
-            ret = ret * 10 + x % 10;
-            if (ret > Integer.MAX_VALUE || ret < Integer.MIN_VALUE) {
+            res = res * 10 + x % 10;
+            if (res < Integer.MIN_VALUE || res > Integer.MAX_VALUE) {
                 return 0;
             }
             x /= 10;
         }
-        return (int)ret;
+        return (int)res;
     }
 }
