@@ -13,7 +13,7 @@ class Solution {
             map.put(word, map.getOrDefault(word, 0) + 1);
         }
         // 小顶堆，相同频率下，字母顺序高的在前，方便入栈
-        PriorityQueue<String> queue = new PriorityQueue<>((o1, o2) -> {
+        Queue<String> queue = new PriorityQueue<>((o1, o2) -> {
             Integer o1Count = map.get(o1);
             Integer o2Count = map.get(o2);
             if (o1Count.equals(o2Count)) {
