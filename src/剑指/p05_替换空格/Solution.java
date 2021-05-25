@@ -6,7 +6,7 @@ package 剑指.p05_替换空格;
 class Solution {
     public String replaceSpace(String s) {
         StringBuilder res = new StringBuilder();
-        for (var c : s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             if (c == ' ') {
                 res.append("%20");
             } else {

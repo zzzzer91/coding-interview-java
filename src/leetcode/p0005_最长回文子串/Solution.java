@@ -8,7 +8,7 @@ class Solution {
     public String longestPalindrome(String s) {
         String res = "";
         for (int i = 0; i < s.length(); i++) {
-            var subS = getPalindrome(s, i, i); // 奇数
+            String subS = getPalindrome(s, i, i); // 奇数
             res = maxStr(res, subS);
             subS = getPalindrome(s, i, i+1); // 偶数
             res = maxStr(res, subS);
